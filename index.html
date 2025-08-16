@@ -1,90 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <title>Sukrati • Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Sukrati's portfolio — projects, skills, and ways to connect." />
-  <title>Sukrati | Portfolio</title>
+  <meta name="description" content="Portfolio of Sukrati — projects, skills, experience, publications, and contact." />
   <link rel="stylesheet" href="style.css?v=1" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header / Nav -->
-  <header id="top" class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="#home">S</a>
-      <div class="links">
+  <!-- ===== NAV ===== -->
+  <header class="site-header" id="top">
+    <nav class="container nav">
+      <a class="brand" href="#home" aria-label="Home">S</a>
+      <div class="nav-links">
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#publications" class="nav-link">Publications</a>
         <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <button id="themeToggle" class="btn small" type="button">🌗 Theme</button>
       </div>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <section id="home" class="section hero">
-    <div class="container hero-grid">
-      <div class="card hero-text">
-        <h1>Hi, I'm <span class="accent">Sukrati</span> 👋</h1>
-        <p class="lead">Product Manager exploring web dev—shipping clean, accessible interfaces.</p>
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">See Projects</a>
-          <a class="btn ghost" href="https://github.com/sukratishm" target="_blank" rel="noopener">GitHub</a>
+    <div class="container hero-wrap card">
+      <div class="hero-text">
+        <h1 class="title">Sukrati</h1>
+        <p class="subtitle">Product Manager • Web Dev Learner • AI Curious</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <a class="btn ghost" href="https://github.com/sukratishm" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
         </div>
       </div>
-      <div class="card hero-media">
-        <img
-          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
-          alt="Minimal workspace with laptop and coffee" />
-      </div>
+      <img class="hero-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Minimal workspace" />
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ===== ABOUT ===== -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title">About Me</h2>
       <p class="card">
-        I’m a PM who loves turning ideas into simple, delightful products. I’m learning React & Material UI and experimenting with AI agents.
+        I turn fuzzy ideas into simple products. I’m learning modern web dev (HTML/CSS/JS, React + MUI) and experimenting with AI-assisted workflows to move faster and learn smarter.
       </p>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <h3 class="subheading">Technical Skills</h3>
+      <div class="skills">
+        <div class="skill"><span>HTML</span><div class="bar"><div style="width: 90%"></div></div><span class="pct">90%</span></div>
+        <div class="skill"><span>CSS</span><div class="bar"><div style="width: 85%"></div></div><span class="pct">85%</span></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div style="width: 70%"></div></div><span class="pct">70%</span></div>
+        <div class="skill"><span>React</span><div class="bar"><div style="width: 55%"></div></div><span class="pct">55%</span></div>
+      </div>
+
+      <h3 class="subheading">Tools & Frameworks</h3>
+      <div class="skills">
+        <div class="skill"><span>Git & GitHub</span><div class="bar"><div style="width: 88%"></div></div><span class="pct">88%</span></div>
+        <div class="skill"><span>Material UI</span><div class="bar"><div style="width: 50%"></div></div><span class="pct">50%</span></div>
+        <div class="skill"><span>Figma</span><div class="bar"><div style="width: 75%"></div></div><span class="pct">75%</span></div>
+      </div>
+
+      <h3 class="subheading">Soft Skills</h3>
+      <ul class="chips">
+        <li class="chip">Problem Solving</li>
+        <li class="chip">Team Collaboration</li>
+        <li class="chip">Communication</li>
+        <li class="chip">Project Management</li>
+        <li class="chip">Adaptability</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+
+      <article class="timeline card">
+        <h3>Product Work (Sample)</h3>
+        <p class="time">Jan 2024 – Present</p>
+        <ul>
+          <li>Shipped a small portfolio + GitHub Pages pipeline; improved load and readability.</li>
+          <li>Iterated UI with user feedback; prioritized accessibility and performance.</li>
+        </ul>
+      </article>
+
+      <article class="timeline card">
+        <h3>Course Projects</h3>
+        <p class="time">2023 – 2024</p>
+        <ul>
+          <li>Built mini sites with HTML/CSS; practiced components in React + MUI.</li>
+          <li>Explored AI agents for automation; documented learnings.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section id="publications" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <ul class="links card">
+        <li><a href="#" target="_blank" rel="noopener">Case Study: Shipping a Mini Site with Pages</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Notes on Learning React & Material UI</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Experiments with Simple AI Agents</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="grid">
         <article class="project card">
           <h3>Mini Site</h3>
-          <p>A clean portfolio deployed with GitHub Pages using plain HTML & CSS.</p>
+          <p>Portfolio deployed with GitHub Pages using plain HTML/CSS.</p>
           <a class="btn small" href="https://github.com/sukratishm" target="_blank" rel="noopener">Code</a>
         </article>
-
         <article class="project card">
           <h3>AI Agents</h3>
-          <p>Exploring intelligent automation, task routing, and small agent workflows.</p>
+          <p>Agentic workflows for small tasks; notes + prototypes.</p>
           <a class="btn small" href="https://github.com/sukratishm" target="_blank" rel="noopener">Code</a>
         </article>
-
         <article class="project card">
           <h3>My Apps</h3>
-          <p>A growing collection of small tools and UI experiments.</p>
+          <p>Simple tools and UI experiments (in progress).</p>
           <a class="btn small" href="https://github.com/sukratishm" target="_blank" rel="noopener">Code</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section alt">
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <p><strong>Coursework / Program:</strong> Web Dev & Product Projects</p>
+        <p><strong>Focus:</strong> HTML/CSS, React + MUI, AI assistants</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="links card">
+        <li><a href="#" target="_blank" rel="noopener">Intro to Web Development</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Git & GitHub Basics</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
     <div class="container">
       <h2 class="section-title">Contact</h2>
-      <p class="card">
-        Say hi on <a href="https://github.com/sukratishm" target="_blank" rel="noopener">GitHub</a> or email
-        <a href="mailto:hello@example.com">hello@example.com</a>.
-      </p>
+      <div class="contact card">
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>LinkedIn: <a href="#" target="_blank" rel="noopener">Add link</a></p>
+        <p>GitHub: <a href="https://github.com/sukratishm" target="_blank" rel="noopener">github.com/sukratishm</a></p>
+      </div>
     </div>
   </section>
 
